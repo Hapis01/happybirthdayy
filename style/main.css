@@ -380,3 +380,71 @@ body::before {
   color: #fffbe6;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+/* ===== Responsive untuk mobile ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* perkecil font di HP */
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .one h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .two, .three, .four p, .five p, .six h3, .six h5, .nine p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hat {
+    width: 70px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-box {
+    width: 90%;
+    margin: auto;
+    font-size: 0.9rem;
+  }
+
+  .fake-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .wish-hbd {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .wish h5 {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Responsive untuk layar sangat kecil (HP lama) ===== */
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .wish-hbd {
+    font-size: 1.4rem;
+  }
+
+  .wish h5 {
+    font-size: 0.9rem;
+  }
+}
